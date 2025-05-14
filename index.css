@@ -329,7 +329,7 @@ footer {
   .nav-links {
     flex-direction: column;
     align-items: flex-end;
-    background: #333;
+    background: #181818; /* Match the dark header */
     width: 100vw;
     position: absolute;
     top: 100%;
@@ -341,15 +341,6 @@ footer {
     z-index: 2;
     transition: max-height 0.3s ease, opacity 0.3s ease;
   }
-  .nav-links.open {
-    max-height: 340px;
-    opacity: 1;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-  }
-  .nav-toggle {
-    display: block;
-  }
-}
 
 @media (max-width: 700px) {
   .footer-main {
