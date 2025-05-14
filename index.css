@@ -117,6 +117,8 @@ header {
 
 /* --- MAIN CONTENT "CARD" --- */
 .site-wrapper {
+  margin: 36px auto 36px auto; 
+  margin-top: 80px;
   background: #fff;
   margin: 36px auto 36px auto;
   max-width: 1200px;
