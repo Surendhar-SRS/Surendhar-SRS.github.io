@@ -8,12 +8,16 @@ body {
 
 /* --- FULL WIDTH, FIXED HEADER --- */
 header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background: #181818;
-  border-radius: 16px 16px 0 0;
-  width: 100%;
-  /* No sticky/fixed, nav scrolls with card */
+  width: 100vw;
+  left: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
+/* --- NAVIGATION BAR --- */
 .topnav {
   display: flex;
   justify-content: space-between;
@@ -23,8 +27,8 @@ header {
   background: #181818;
   width: 100%;
   box-sizing: border-box;
-  border-radius: 16px 16px 0 0;
 }
+
 .nav-left {
   display: flex;
   align-items: center;
