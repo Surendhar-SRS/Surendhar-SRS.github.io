@@ -358,3 +358,11 @@ footer {
 .hero, .features, .feature-card, footer {
   animation: fadeInUp 0.9s cubic-bezier(0.6, 0.3, 0.4, 1.17);
 }
+
+@media (max-width: 600px) {
+  .site-wrapper {
+    margin: 2vw;
+    border-width: 2.5px;
+    border-radius: 8px;
+  }
+}
