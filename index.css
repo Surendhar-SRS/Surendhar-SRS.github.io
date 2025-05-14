@@ -17,12 +17,21 @@
   transition: box-shadow 0.3s;
 }
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #181818; /* Darker background for topbar */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
 .topnav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
   min-height: 64px;
+  background: #181818; /* Ensure nav stays dark as well */
 }
 
 .nav-left {
