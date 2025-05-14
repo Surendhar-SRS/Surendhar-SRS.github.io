@@ -10,19 +10,25 @@
 </head>
 
 <body>
-  <header style="background-color:black">
-    <nav class="topnav" style="text-align:right;font-size:250%;">
-      <a class="active" href="login.html" target="_blank"><button>Login</button></a>
-      <a href="registeration.html" target="_blank"><button>Register</button></a>
-    </nav>
-
-    <nav class="topnav" style="text-align:center;font-size:150%;">
-      <a class="active" href="index.html" style="color:white;">Home</a>
-      <a href="contact.html" style="color:white;">Contact</a>
-      <a href="about.html" style="color:white;">About Us</a>
-    </nav>
-<br><br>
-  </header>
+ <header>
+  <nav class="topnav" id="topnav">
+    <div class="nav-left">
+      <span class="nav-logo">Full Stack Dev</span>
+    </div>
+    <div class="nav-right">
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span class="arrow">&#9660;</span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html" target="_blank"><button class="login-btn">Login</button></a>
+        <a href="registeration.html" target="_blank"><button class="register-btn">Register</button></a>
+      </div>
+    </div>
+  </nav>
+</header>
 
 
   <main>
