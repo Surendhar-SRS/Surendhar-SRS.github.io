@@ -384,53 +384,38 @@
     </section>
   </main>
 
-  <footer style="background-color: #8B4513; color: white; padding: 30px 20px; border-radius: 0 0 6px 6px; margin-top: 40px;">
-    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-      <div style="flex: 1; min-width: 250px; margin-bottom: 20px; padding: 0 15px;">
-        <h3 style="border-bottom: 2px solid #ffd480; padding-bottom: 10px; margin-bottom: 15px;">About Us</h3>
+    <footer>
+    <div class="footer-main">
+      <div>
+        <h3>About Us</h3>
         <p>This website is designed to provide valuable insights into Full Stack Development, helping learners and enthusiasts understand both front-end and back-end technologies.</p>
-        <p>Created with passion and dedication by <strong>Surendhar</strong>, this platform aims to simplify complex development concepts and make learning more accessible.</p>
-        <!-- Added company logo -->
-        <div style="margin-top: 20px;">
-          <img src="https://cdn-icons-png.flaticon.com/512/8649/8649595.png" alt="SRS TAMIZHAN DEVELOPEMENTS Logo" style="width: 120px;">
-        </div>
+        <p>Created with passion and dedication by <strong>Surendhar</strong>, this platform aims to simplify complex concepts and make learning more accessible.</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/8649/8649595.png" alt="SRS TAMIZHAN" style="width: 80px;">
       </div>
-      
-      <div style="flex: 1; min-width: 250px; margin-bottom: 20px; padding: 0 15px;">
-        <h3 style="border-bottom: 2px solid #ffd480; padding-bottom: 10px; margin-bottom: 15px;">Quick Links</h3>
-        <ul style="list-style-type: none; padding: 0;">
-          <li style="margin-bottom: 8px;"><a href="fullstackdev.html" style="color: white; text-decoration: none;">Full Stack Development<a></li>
-          <li style="margin-bottom: 8px;"><a href="frontend.html" style="color: white; text-decoration: none;">Front End Development</a></li>
-          <li style="margin-bottom: 8px;"><a href="backend.html" style="color: white; text-decoration: none;">Back End Development</a></li>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="fullstackdev.html">Full Stack Development</a></li>
+          <li><a href="frontend.html">Front End Development</a></li>
+          <li><a href="backend.html">Back End Development</a></li>
         </ul>
       </div>
-      
-      <div style="flex: 1; min-width: 250px; margin-bottom: 20px; padding: 0 15px;">
-        <h3 style="border-bottom: 2px solid #ffd480; padding-bottom: 10px; margin-bottom: 15px;">Connect With Us</h3>
-        <p style="margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:srstamizhannetwork@gmail.com" style="color: white;">srstamizhannetwork@gmail.com</a></p>
-        <p style="margin-bottom: 10px;"><strong>YouTube:</strong> <a href="https://youtube.com/srsffgaming" style="color: white;">SRS TAMIZHAN DEVELOPEMENTS</a></p>
-        <div style="margin-top: 20px;">
-          <a href="https://youtube.com/srsffgaming" style="display: inline-block; margin-right: 15px; color: white; font-size: 24px; text-decoration: none;">
-            <img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="Twitter" style="width: 30px;">
-          </a>
-          <a href="https://youtube.com/srsffgaming" style="display: inline-block; margin-right: 15px; color: white; font-size: 24px; text-decoration: none;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook" style="width: 30px;">
-          </a>
-          <a href="https://youtube.com/srsffgaming" style="display: inline-block; margin-right: 15px; color: white; font-size: 24px; text-decoration: none;">
-            <img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="Instagram" style="width: 30px;">
-          </a>
+      <div>
+        <h3>Connect With Us</h3>
+        <p><strong>Email:</strong> <a href="mailto:srstamizhannetwork@gmail.com">srstamizhannetwork@gmail.com</a></p>
+        <div class="footer-icons">
+          <a href="https://youtube.com/srsffgaming" title="YouTube"><img src="https://cdn-icons-png.flaticon.com/512/3256/3256013.png" alt="YouTube"></a>
+          <a href="https://facebook.com/" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968764.png" alt="Facebook"></a>
+          <a href="https://instagram.com/" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/3955/3955024.png" alt="Instagram"></a>
         </div>
       </div>
     </div>
-    
-    <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ffd480;">
-      <p>Subscribe to our newsletter for the latest updates:</p>
-      <div style="max-width: 500px; margin: 0 auto; display: flex;">
-        <input type="email" placeholder="Enter your email" style="flex: 1; padding: 10px; border: none; border-radius: 4px 0 0 4px;">
-        <button style="background-color: #ffd480; color: #8B4513; border: none; padding: 10px 15px; border-radius: 0 4px 4px 0; font-weight: bold; cursor: pointer;">Subscribe</button>
-      </div>
-      
-      <p style="margin-top: 30px;">&copy; 2025 SRS TAMIZHAN DEVELOPEMENTS. All rights reserved.</p>
+    <div class="footer-bottom">
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p>&copy; 2025 SRS TAMIZHAN DEVELOPEMENTS. All rights reserved.</p>
     </div>
   </footer>
 </body>
