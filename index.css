@@ -42,7 +42,11 @@ border-radius:10px;
 
 .arrow {
   display: inline-block;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.4, 2, 0.6, 1);
+  font-size: 1.7em;
+}
+.nav-toggle:hover .arrow {
+  color: #fff;
 }
 
 .nav-links {
