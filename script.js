@@ -1,10 +1,8 @@
-<script>
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  const arrow = navToggle.querySelector('.arrow');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+const arrow = navToggle.querySelector('.arrow');
 
-  navToggle.addEventListener('click', function() {
-    navLinks.classList.toggle('open');
-    arrow.style.transform = navLinks.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
-  });
-</script>
+navToggle.addEventListener('click', function () {
+  navLinks.classList.toggle('open');
+  arrow.style.transform = navLinks.classList.contains('open') ? 'rotate(180deg)' : 'rotate(0deg)';
+});
