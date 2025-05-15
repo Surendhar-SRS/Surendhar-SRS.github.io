@@ -46,16 +46,18 @@ h1, h2 {
   text-align: left;
 }
 
+/* Updated input field styles to fix margin overflow */
 .form-card input[type="text"],
 .form-card input[type="email"],
 .form-card input[type="password"] {
-  width: 100%;
+  width: 100%; /* Ensure inputs fit within the form card */
   padding: 0.7em 1em;
   margin-bottom: 1.3em;
   border: 1.5px solid #ffd480;
   border-radius: 7px;
   background: #fff;
   font-size: 1em;
+  box-sizing: border-box; /* Include padding and border in width calculation */
   transition: box-shadow 0.2s, border-color 0.2s;
 }
 
