@@ -8,7 +8,7 @@ body {
 
 /* --- MAIN CONTENT "CARD" --- */
 .site-wrapper {
-  background: #fff;
+  background: #ffd480;
   max-width: 1800;/* Increased from 1200px */
   width: 100%; /* Changed from 96% to 100% */
   margin: 0 auto; /* Removed top/bottom margin */
@@ -60,17 +60,6 @@ header {
   position: relative;
 }
 
-/* Remove the nav-toggle button styles */
-.nav-toggle {
-  display: none;
-}
-
-/* Remove the arrow styles */
-.arrow {
-  display: none;
-}
-
-/* Update the nav-links to always be visible */
 .nav-links {
   display: flex;
   align-items: center;
