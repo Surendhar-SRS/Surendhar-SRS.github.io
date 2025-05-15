@@ -9,7 +9,7 @@ body {
 /* --- MAIN CONTENT "CARD" --- */
 .site-wrapper {
   background: #fff;
-  /* Increased from 1200px */
+  max-width: 1800;/* Increased from 1200px */
   width: 100%; /* Changed from 96% to 100% */
   margin: 0 auto; /* Removed top/bottom margin */
   border: 4px solid #111;
