@@ -10,7 +10,7 @@ body {
 .site-wrapper {
   background: #fff;
   max-width: 1400;/* Increased from 1200px */
-  width: 90%; /* Changed from 96% to 100% */
+  width: 95%; /* Changed from 96% to 100% */
   margin: 0 auto; /* Removed top/bottom margin */
   border: 4px solid #111;
   border-radius: 20px;
