@@ -8,7 +8,7 @@ body {
 
 /* --- MAIN CONTENT "CARD" --- */
 .site-wrapper {
-  background: #fff;
+  background: #ffd480;
   max-width: 1200;/* Increased from 1200px */
   width: 80%; /* Changed from 96% to 100% */
   margin: 0 auto; /* Removed top/bottom margin */
