@@ -1,41 +1,38 @@
-<!DOCTYPE html> 
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Full Stack Development - Login</title>
-  <meta name="description" content="Learn about Full Stack Development, including front-end and back-end technologies.">
-  <meta property="og:title" content="Full Stack Development - SRS TAMIZHAN NETWORK">
-  <meta property="og:description" content="A modern guide to Full Stack Development.">
+  <title>Login - SRS Tamizhan Network</title>
+  <meta name="description" content="Login to SRS Tamizhan Network to access Full Stack Development resources.">
+  <meta property="og:title" content="Login - SRS Tamizhan Network">
+  <meta property="og:description" content="Access your account for expert Full Stack resources.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://srstamizhannetwork.github.io/">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8649/8649595.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-<hr>
-<center><h1>Login</h1> </center> 
-<hr>
+  <div class="center-container">
+    <form class="form-card" autocomplete="on">
+      <hr>
+      <h1 style="text-align:center; margin-top:0;">Login</h1>
+      <p style="color:#7a5d3e; text-align:center; margin:-10px 0 1.5em 0; font-size:1.07em;">
+        Welcome back! Sign in to access exclusive Full Stack Development content.
+      </p>
 
+      <label for="login-username">Username or Email</label>
+      <input type="text" id="login-username" name="username" placeholder="Enter your username or email" required autofocus>
 
-<form>
-<br><br>
-Username / Email : <input type="text"name="name"/>
-<br><br>
-<label> Password : </label> 
-<input type="password"/>
-<br><br>
-<button><a href="index.html">Login</a></button>
-<br><br>
+      <label for="login-password">Password</label>
+      <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
 
-Are you new here ?<a href="registeration.html" target="_blank">create a new account</a>
+      <button type="submit">Login</button>
 
-</form>
-
+      <div class="form-footer">
+        New here? <a href="Registeration.html">Create a new account</a>
+      </div>
+    </form>
+  </div>
 </body>
-
 </html>
