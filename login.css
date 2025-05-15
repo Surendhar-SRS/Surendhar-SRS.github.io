@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  background: linear-gradient(120deg, #f8f8f8 0%, #d6c6b8 100%);
+  font-family: 'Inter', 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  font-family: 'Montserrat', 'Inter', Arial, sans-serif;
+  color: #8B4513;
+  margin-bottom: 0.5em;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.form-card {
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(139, 69, 19, 0.08), 0 1.5px 5px rgba(139,69,19,0.09);
+  min-width: 340px;
+  max-width: 375px;
+  width: 100%;
+}
+
+.form-card hr {
+  border: none;
+  border-top: 2.5px solid #8B4513;
+  margin: 0 0 1.5em 0;
+}
+
+.form-card label {
+  display: block;
+  font-size: 1.07em;
+  margin-bottom: 0.5em;
+  color: #5c3926;
+  font-weight: 600;
+}
+
+.form-card input[type="text"],
+.form-card input[type="email"],
+.form-card input[type="password"] {
+  width: 100%;
+  padding: 0.7em 1em;
+  margin-bottom: 1.3em;
+  border: 1.5px solid #b8a489;
+  border-radius: 7px;
+  background: #f8f6f4;
+  font-size: 1em;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.form-card input[type="text"]:focus,
+.form-card input[type="email"]:focus,
+.form-card input[type="password"]:focus {
+  border-color: #8B4513;
+  box-shadow: 0 0 0 2px #8B451355;
+  outline: none;
+}
+
+.form-card button {
+  width: 100%;
+  padding: 0.7em 0;
+  background: linear-gradient(90deg, #8B4513 40%, #ad8768 100%);
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  font-size: 1.1em;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.22s, box-shadow 0.22s;
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.11);
+  margin-bottom: 1em;
+}
+
+.form-card button:hover {
+  background: linear-gradient(90deg, #7a370f 40%, #8B4513 100%);
+}
+
+.form-card .form-footer {
+  text-align: center;
+  font-size: 0.97em;
+  color: #7a5d3e;
+}
+
+.form-card .form-footer a {
+  color: #8B4513;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.3em;
+  transition: color 0.16s;
+}
+
+.form-card .form-footer a:hover {
+  color: #ad8768;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 520px) {
+  .form-card {
+    padding: 1.2rem 0.8rem;
+    min-width: unset;
+    max-width: 98vw;
+  }
+}
+
+/* Optional: Animation on show */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.form-card {
+  animation: fadeInUp 0.7s cubic-bezier(0.27, 0.8, 0.44, 0.98);
+}
