@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Front End Development - SRS TAMIZHAN DEVELOPEMENTS</title>
-  <meta name="description" content="Learn about Front End Development, technologies, tools, and study resources.">
+  <meta name="description" content="Comprehensive guide to Front End Development: HTML, CSS, JavaScript, Bootstrap, React and more.">
   <meta property="og:title" content="Front End Development - SRS Tamizhan Network">
-  <meta property="og:description" content="Master Front End technologies with tutorials, guides, and resources.">
+  <meta property="og:description" content="Master Front End technologies and frameworks with tutorials, guides, projects, and resources.">
   <meta property="og:type" content="website">
   <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8649/8649595.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
@@ -24,6 +25,7 @@
           <div class="nav-links" id="navLinks">
             <a href="index.html">Home</a>
             <a href="frontend.html" class="active">Front End</a>
+            <a href="backend.html">Back End</a>
             <a href="about.html">About Us</a>
             <a href="login.html" target="_blank"><button class="login-btn">Login</button></a>
             <a href="Registeration.html" target="_blank"><button class="register-btn">Register</button></a>
@@ -33,228 +35,206 @@
     </header>
 
     <main>
+      <!-- PAGE NAVIGATION -->
+      <nav style="background:#fffbe6;border-radius:10px;margin:15px 25px 25px 25px;padding:15px 10px;text-align:center;">
+        <b>Quick Access:</b>
+        <a href="#html">HTML</a> |
+        <a href="#css">CSS</a> |
+        <a href="#js">JavaScript</a> |
+        <a href="#bootstrap">Bootstrap</a> |
+        <a href="#react">React</a> |
+        <a href="#uxui">UI/UX</a> |
+        <a href="#tools">Tools</a> |
+        <a href="#projects">Project Ideas</a> |
+        <a href="#career">Career Tips</a>
+      </nav>
+
       <!-- HERO SECTION -->
       <section class="hero">
         <div class="hero-content">
           <h1>Front End Development</h1>
           <p>Design beautiful, interactive, and responsive user experiences. Learn the essentials of HTML, CSS, JavaScript, and modern frameworks.</p>
-          <a href="#study-content" class="cta-btn">Start Learning</a>
+          <a href="#html" class="cta-btn">Start Learning</a>
         </div>
         <img src="images/frontend-developement.png" alt="Front End Illustration" class="hero-img">
       </section>
 
-      <!-- INTRODUCTION -->
-      <section>
+      <!-- HTML SECTION -->
+      <section id="html">
         <div style="color:white;background-color:#8B4513;">
           <hr>
-          <h1 style="font-family:times new roman; text-align:center">FRONT END DEVELOPMENT</h1>
+          <h2 style="text-align:center;">HTML (HyperText Markup Language)</h2>
         </div>
-        <br>
-        <article style="padding-left:40px; padding-right:40px;">
-          <p style="font-size:130%"><b>Front End Development</b> focuses on everything users see and interact with in a web application. It combines design, usability, performance, and accessibility to deliver seamless digital experiences.</p>
-          <div style="text-align: center; margin: 30px 0;">
-            <img src="images/frontend-frameworks.png" 
-                 alt="Front End Technologies" 
-                 style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
-            <p style="font-style: italic; color: #8B4513; margin-top: 10px;">Key Front End Technologies and Frameworks</p>
-          </div>
-          <p style="font-size:130%">Front end developers primarily use <b>HTML</b> (structure), <b>CSS</b> (styling), and <b>JavaScript</b> (interactivity). Frameworks and libraries like <b>React</b>, <b>Angular</b>, and <b>Vue.js</b> help build complex, scalable applications efficiently.</p>
-          <p style="font-size:130%">The role also involves ensuring <b>responsive design</b> (adapting to all device sizes), <b>accessibility</b> (usable by people with disabilities), and <b>performance optimization</b> (fast loading and smooth interactions).</p>
-          <hr>
-          <h2 style="color:#8B4513;">What Does a Front End Developer Do?</h2>
-          <ul style="font-size:120%">
-            <li>Translates UI/UX designs into functional, interactive web pages and applications.</li>
-            <li>Builds layouts and components that work across browsers and devices.</li>
-            <li>Optimizes site speed and performance for users on all networks.</li>
-            <li>Implements accessibility features for inclusive user experiences.</li>
-            <li>Collaborates with designers, back end developers, and other team members.</li>
-            <li>Stays updated with the latest tools, libraries, and best practices.</li>
-          </ul>
-          <p style="font-size:130%">
-            In modern development, front end developers also write automated tests, use version control (like Git), and are often involved in deploying and monitoring front end applications.
-          </p>
-        </article>
-      </section>
-
-      <!-- CAREER TIPS & REAL WORLD INSIGHTS -->
-      <section>
-        <div style="color:white;background-color:#8B4513;">
-          <hr>
-          <h2 style="font-size:150%;color:white;background-color:#8B4513; text-align:center;"><b>Career Tips & Real World Insights</b></h2>
-        </div>
-        <article style="padding-left:40px; padding-right:40px;">
-          <h3 style="color:#8B4513;">Career Tips for Front End Developers</h3>
-          <ul style="font-size:120%">
-            <li><b>Build a Portfolio:</b> Showcase your work with personal projects, open source contributions, or freelance gigs. Live demos and GitHub repositories add credibility.</li>
-            <li><b>Master the Fundamentals:</b> Deep knowledge of HTML, CSS, and JavaScript is essential before moving to frameworks.</li>
-            <li><b>Learn a Modern Framework:</b> Most jobs require proficiency in React, Angular, or Vue. Start with one and understand its ecosystem.</li>
-            <li><b>Follow Design Systems:</b> Learn to implement and possibly design component libraries and design systems used in real-world teams.</li>
-            <li><b>Practice Problem Solving:</b> Algorithms and coding challenges (like those on LeetCode, HackerRank) sharpen your JavaScript and logic skills, often tested in interviews.</li>
-            <li><b>Stay Updated:</b> Subscribe to newsletters, follow blogs, and participate in communities (like Stack Overflow, Twitter) to keep up with trends and updates.</li>
-            <li><b>Understand Version Control:</b> Comfort with Git and collaboration workflows is a must in any team setting.</li>
-            <li><b>Soft Skills Matter:</b> Communication, teamwork, and the ability to explain technical concepts are highly valued by employers.</li>
-          </ul>
-          <h3 style="color:#8B4513;">Real World Insights</h3>
-          <ul style="font-size:120%">
-            <li><b>Front End ≠ Just Design:</b> While design is important, front end roles are highly technical. You'll work with build tools, performance audits, browser APIs, and debugging tools.</li>
-            <li><b>Cross-Disciplinary Work:</b> Expect to collaborate closely with back end, UX/UI designers, QA, and sometimes product managers to deliver complete features.</li>
-            <li><b>Continuous Learning:</b> The JavaScript ecosystem evolves rapidly. Embrace learning as a career-long habit.</li>
-            <li><b>Performance is Key:</b> Real users value sites that load fast and feel smooth. Learn to measure and optimize performance using tools like Lighthouse and Chrome DevTools.</li>
-            <li><b>Accessibility is Not Optional:</b> Making your app usable for all is both a legal and ethical requirement in many industries.</li>
-            <li><b>Freelance & Remote Opportunities:</b> Many front end roles are remote-friendly, and freelance/contract work is common.</li>
-            <li><b>Common Interview Topics:</b> Expect questions on the DOM, event handling, closures, async programming, CSS layouts, accessibility, and sometimes system design for complex SPAs.</li>
-          </ul>
-        </article>
-      </section>
-
-      <!-- STUDY CONTENTS SECTION -->
-      <section id="study-content">
-        <div style="color:white;background-color:#8B4513;">
-          <hr>
-          <h2 style="font-size:150%;color:white;background-color:#8B4513; text-align:center;"><b>Front End Study Contents</b></h2>
-        </div>
-        <br>
-        <article style="padding-left:40px; padding-right:40px;">
-          <ul style="font-size:120%">
-            <li><b>HTML5:</b> Structure of web pages, semantic tags, forms, media, accessibility basics.</li>
-            <li><b>CSS3:</b> Styling, selectors, layouts (Flexbox, Grid), animations, transitions, responsive design with media queries.</li>
-            <li><b>JavaScript (ES6+):</b> Variables, data types, functions, DOM manipulation, events, AJAX, fetch API, ES6 features (let, const, arrow functions, classes, promises, async/await).</li>
-            <li><b>Version Control:</b> Using Git & GitHub for source code management and collaboration.</li>
-            <li><b>Frameworks & Libraries:</b>
-              <ul>
-                <li><b>React.js:</b> Components, props, state, hooks, JSX, routing, state management.</li>
-                <li><b>Angular:</b> Modules, components, services, dependency injection, TypeScript basics.</li>
-                <li><b>Vue.js:</b> Directives, components, computed properties, lifecycle hooks.</li>
-              </ul>
+        <article>
+          <p><b>What is HTML?</b> The backbone of every web page. HTML defines the structure and content of a web document using elements and tags.</p>
+          <ul>
+            <li><b>Key Concepts:</b> Elements, tags, attributes, semantic HTML, forms, multimedia (images, video, audio), accessibility basics.</li>
+            <li><b>Tips:</b> Always use semantic tags (&lt;header&gt;, &lt;main&gt;, &lt;article&gt;, &lt;footer&gt;, etc.) for better SEO and accessibility.</li>
+            <li><b>Project Ideas:</b> Build a personal portfolio, resume, or a landing page using only HTML.</li>
+            <li><b>Resources:</b> 
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Guide</a> |
+              <a href="https://www.freecodecamp.org/learn/" target="_blank">FreeCodeCamp</a>
             </li>
-            <li><b>Build Tools:</b> NPM/Yarn, Webpack, Babel, task runners.</li>
-            <li><b>UI/UX Principles:</b> Color theory, typography, layout, wireframing, prototyping (Figma, Sketch).</li>
-            <li><b>Testing:</b> Unit testing (Jest, Mocha), end-to-end testing (Cypress, Selenium), debugging tools.</li>
-            <li><b>Performance Optimization:</b> Code splitting, lazy loading, image optimization, minimizing HTTP requests.</li>
-            <li><b>Accessibility:</b> ARIA roles, keyboard navigation, semantic HTML, contrast and color accessibility.</li>
-            <li><b>Deployment:</b> Hosting static sites (Netlify, GitHub Pages, Vercel), CI/CD basics.</li>
           </ul>
         </article>
       </section>
 
-      <!-- ROADMAP SECTION -->
-      <section>
+      <!-- CSS SECTION -->
+      <section id="css">
         <div style="color:white;background-color:#8B4513;">
           <hr>
-          <h2 style="font-size:150%;color:white;background-color:#8B4513; text-align:center;"><b>Front End Developer Roadmap</b></h2>
+          <h2 style="text-align:center;">CSS (Cascading Style Sheets)</h2>
         </div>
-        <div style="text-align: center; margin: 30px 0; padding: 0 40px;">
-          <img src="images/frontend-roadmap.png" 
-               alt="Front End Roadmap" 
-               style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
-          <p style="font-style: italic; color: #8B4513; margin-top: 10px;">Suggested learning path to master Front End Development</p>
-        </div>
+        <article>
+          <p><b>What is CSS?</b> CSS styles and arranges the web page—colors, layouts, fonts, animations, and responsiveness.</p>
+          <ul>
+            <li><b>Key Concepts:</b> Selectors, box model, flexbox, grid, media queries, pseudo-classes, transitions, animations.</li>
+            <li><b>Tips:</b> Master flexbox and grid for responsive layouts. Use variables with <code>:root</code> for easy theming.</li>
+            <li><b>Project Ideas:</b> Create a responsive multi-page site, animated banners, or a CSS-only menu.</li>
+            <li><b>Resources:</b> 
+              <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox Guide</a> |
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Guide</a>
+            </li>
+          </ul>
+        </article>
       </section>
 
-      <!-- POPULAR FRONT END TOOLS -->
-      <section>
+      <!-- JAVASCRIPT SECTION -->
+      <section id="js">
         <div style="color:white;background-color:#8B4513;">
           <hr>
-          <h2 style="font-size:150%;color:white;background-color:#8B4513; text-align:center;"><b>Popular Front End Tools</b></h2>
+          <h2 style="text-align:center;">JavaScript (JS)</h2>
         </div>
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin: 30px 0; padding: 0 20px;">
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968267.png" alt="HTML5" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">HTML5</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS3" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">CSS3</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JavaScript" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">JavaScript</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/1126/1126012.png" alt="React" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">React</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Angular" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">Angular</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png" alt="Vue.js" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">Vue.js</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968705.png" alt="Webpack" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">Webpack</p>
-          </div>
-          <div style="text-align: center; width: 150px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" alt="Figma" style="width: 80px; height: 80px;">
-            <p style="margin-top: 10px; font-weight: bold;">Figma</p>
-          </div>
-        </div>
+        <article>
+          <p><b>What is JavaScript?</b> It adds interactivity to web pages—sliders, popups, form validation, dynamic content, and more.</p>
+          <ul>
+            <li><b>Key Concepts:</b> Variables, data types, functions, objects, DOM manipulation, events, ES6 features, async/await, fetch API.</li>
+            <li><b>Advanced:</b> Closures, promises, modules, debouncing/throttling, error handling, localStorage/sessionStorage.</li>
+            <li><b>Project Ideas:</b> Build a to-do app, calculator, interactive quiz, or weather dashboard using APIs.</li>
+            <li><b>Resources:</b> 
+              <a href="https://javascript.info/" target="_blank">javascript.info</a> |
+              <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/" target="_blank">freeCodeCamp JS</a>
+            </li>
+          </ul>
+        </article>
       </section>
 
-      <!-- VIDEO RESOURCES SECTION -->
-      <section>
+      <!-- BOOTSTRAP SECTION -->
+      <section id="bootstrap">
         <div style="color:white;background-color:#8B4513;">
           <hr>
-          <h2 style="font-size:150%;color:white;background-color:#8B4513; text-align:center;"><b>Front End Tutorial Videos</b></h2>
+          <h2 style="text-align:center;">Bootstrap & CSS Frameworks</h2>
         </div>
-        <br>
-        <div style="display: flex; justify-content: space-between; margin-top: 20px; flex-wrap: wrap;">
-          <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-            <figure>
-              <iframe 
-                width="520" 
-                height="320" 
-                src="https://www.youtube.com/embed/pQN-pnXPaVg" 
-                title="HTML & CSS Crash Course" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
-                style="border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); max-width: 100%;">
-              </iframe>
-              <figcaption style="color: #8B4513; font-weight: bold; margin-top: 10px;">HTML & CSS Crash Course</figcaption>
-            </figure>
-          </div>
-
-          <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-            <figure>
-              <iframe 
-                width="520" 
-                height="320" 
-                src="https://www.youtube.com/embed/hdI2bqOjy3c" 
-                title="JavaScript Tutorial for Beginners" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen
-                style="border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); max-width: 100%;">
-              </iframe>
-              <figcaption style="color: #8B4513; font-weight: bold; margin-top: 10px;">JavaScript Tutorial for Beginners</figcaption>
-            </figure>
-          </div>
-        </div>
-        <br>
-        <div style="text-align: center; margin-top: 20px;">
-          <figure>
-            <iframe 
-              width="520" 
-              height="320" 
-              src="https://www.youtube.com/embed/bMknfKXIFA8" 
-              title="React JS Full Course" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" 
-              allowfullscreen
-              style="border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); max-width: 100%;">
-            </iframe>
-            <figcaption style="color: #8B4513; font-weight: bold; margin-top: 10px;">React JS Full Course</figcaption>
-          </figure>
-        </div>
-        <br>
+        <article>
+          <p><b>What is Bootstrap?</b> Bootstrap and similar frameworks (Tailwind, Materialize) offer pre-built components and responsive design out of the box.</p>
+          <ul>
+            <li><b>Key Concepts:</b> Grid system, utility classes, responsive breakpoints, navbars, forms, cards, modals.</li>
+            <li><b>Tips:</b> Use Bootstrap for rapid prototyping and mobile-first design. Learn to customize themes.</li>
+            <li><b>Project Ideas:</b> Build a blog, product landing page, or admin dashboard using Bootstrap.</li>
+            <li><b>Resources:</b> 
+              <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap Official Docs</a> |
+              <a href="https://tailwindcss.com/docs" target="_blank">Tailwind CSS</a>
+            </li>
+          </ul>
+        </article>
       </section>
 
+      <!-- REACT SECTION -->
+      <section id="react">
+        <div style="color:white;background-color:#8B4513;">
+          <hr>
+          <h2 style="text-align:center;">React & Modern Front End Frameworks</h2>
+        </div>
+        <article>
+          <p><b>React</b> is a library for building component-based UIs. Learning React opens doors to Next.js, Gatsby, and other modern tools.</p>
+          <ul>
+            <li><b>Key Concepts:</b> Components, props, state, hooks (useState, useEffect), JSX, routing, lifting state up.</li>
+            <li><b>Advanced:</b> Context API, Redux, custom hooks, code splitting, performance optimization.</li>
+            <li><b>Other Frameworks:</b> Angular (TypeScript), Vue.js, Svelte (each with its own philosophy and ecosystem).</li>
+            <li><b>Project Ideas:</b> Build a weather app, blog, e-commerce frontend, or SPA (single page application).</li>
+            <li><b>Resources:</b>
+              <a href="https://react.dev/" target="_blank">React Docs</a> |
+              <a href="https://vuejs.org/guide/introduction.html" target="_blank">Vue.js Guide</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- UI/UX DESIGN SECTION -->
+      <section id="uxui">
+        <div style="color:white;background-color:#8B4513;">
+          <hr>
+          <h2 style="text-align:center;">UI/UX & Accessibility</h2>
+        </div>
+        <article>
+          <ul>
+            <li><b>UI/UX Principles:</b> Color theory, typography, white space, visual hierarchy, wireframes, prototyping (Figma, Adobe XD).</li>
+            <li><b>Accessibility:</b> Semantic HTML, color contrast, ARIA roles, keyboard navigation, screen reader support.</li>
+            <li><b>Tips:</b> Test your site with screen readers, and ensure all interactive elements are keyboard accessible.</li>
+            <li><b>Resources:</b>
+              <a href="https://www.smashingmagazine.com/tag/accessibility/" target="_blank">Smashing Magazine Accessibility</a> |
+              <a href="https://www.w3.org/WAI/test-evaluate/" target="_blank">W3C Accessibility Tests</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- FRONT END TOOLS SECTION -->
+      <section id="tools">
+        <div style="color:white;background-color:#8B4513;">
+          <hr>
+          <h2 style="text-align:center;">Development Tools & Workflow</h2>
+        </div>
+        <article>
+          <ul>
+            <li><b>Version Control:</b> Git & GitHub basics, branching, pull requests, resolving merge conflicts.</li>
+            <li><b>Build Tools:</b> NPM/Yarn, Webpack, Vite, linters (ESLint, Stylelint), Prettier.</li>
+            <li><b>Testing:</b> Unit testing (Jest, Testing Library), E2E testing (Cypress).</li>
+            <li><b>Deployment:</b> Hosting on Netlify, Vercel, GitHub Pages, CI/CD basics.</li>
+            <li><b>Resources:</b>
+              <a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a> |
+              <a href="https://webpack.js.org/concepts/" target="_blank">Webpack Concepts</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- PROJECT IDEAS SECTION -->
+      <section id="projects">
+        <div style="color:white;background-color:#8B4513;">
+          <hr>
+          <h2 style="text-align:center;">Project Ideas & Challenges</h2>
+        </div>
+        <article>
+          <ul>
+            <li>Personal portfolio site</li>
+            <li>Responsive blog template</li>
+            <li>Weather dashboard (using a public API)</li>
+            <li>To-do list with localStorage</li>
+            <li>Quiz app with score tracking</li>
+            <li>Product landing page (with Bootstrap or Tailwind)</li>
+            <li>Single Page Application (SPA) with React or Vue</li>
+            <li>Clone a famous website layout (YouTube, Twitter, etc.)</li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- CAREER & LEARNING SECTION -->
+      <section id="career">
+        <div style="color:white;background-color:#8B4513;">
+          <hr>
+          <h2 style="text-align:center;">Career Tips & Further Learning</h2>
+        </div>
+        <article>
+          <ul>
+            <li><b>Build a portfolio</b> with live demos and GitHub links.</li>
+            <li><b>Contribute to open source</b> on GitHub to gain real-world experience.</li>
+            <li><b>Prepare for interviews</b>: practice coding challenges (LeetCode, HackerRank), review common HTML/CSS/JS questions, and be ready to explain your projects.</li>
+            <li><b>Follow blogs/newsletters</b>: CSS-Tricks, Smashing Magazine, JavaScript Weekly.</li>
+            <li><b>Never stop learning!</b> The web evolves quickly—keep building and experimenting.</li>
+          </ul>
+        </article>
+      </section>
     </main>
 
     <footer>
