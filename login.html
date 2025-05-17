@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="center-container">
-    <form class="form-card" autocomplete="on">
+    <form class="form-card" id="login-form" autocomplete="on">
       <h1 style="color:#8b4513">Login</h1>
       <p style="color:#8b4513; margin:-10px 0 1.5em 0; font-size:1.07em;">
         Welcome back! Sign in to access our exclusive products & resources.
@@ -26,6 +26,8 @@
       <label for="login-password">Password</label>
       <input type="password" id="login-password" name="password" placeholder="Enter your password" required>
 
+      <div class="password-strength" id="login-message"></div>
+
       <button type="submit">Login</button>
 
       <div class="form-footer">
@@ -33,5 +35,6 @@
       </div>
     </form>
   </div>
+  <script src="login.js"></script>
 </body>
 </html>
