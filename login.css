@@ -129,14 +129,15 @@ h1, h2 {
   position: relative;
   display: flex;
   align-items: center;
+  height: 100%; /* Ensures the wrapper matches the input's height */
 }
 
-/* Ensure ALL input types in password wrapper get enough right padding for the icon */
 .password-field-wrapper input {
+  width: 100%;
   padding-right: 2.5em !important;
+  box-sizing: border-box;
 }
 
-/* Eye icon inside input, right-aligned and vertically centered */
 .eye-icon {
   position: absolute;
   right: 1em;
@@ -148,6 +149,10 @@ h1, h2 {
   opacity: 0.7;
   user-select: none;
   z-index: 2;
+  line-height: 1; /* Ensures icon doesn't get vertically stretched */
+  display: flex;
+  align-items: center;
+  height: 1.5em; /* Optional, match icon height to input font-size */
 }
 
 
