@@ -125,19 +125,18 @@ h1, h2 {
   animation: fadeInUp 0.7s cubic-bezier(0.27, 0.8, 0.44, 0.98);
 }
 
-/* --- Registeration page password strength and eye icon styles --- */
 .password-field-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-/* Give extra space for the icon */
-.password-field-wrapper input[type="password"] {
-  padding-right: 2.5em;
+/* Ensure ALL input types in password wrapper get enough right padding for the icon */
+.password-field-wrapper input {
+  padding-right: 2.5em !important;
 }
 
-/* Eye icon inside input */
+/* Eye icon inside input, right-aligned and vertically centered */
 .eye-icon {
   position: absolute;
   right: 1em;
@@ -150,6 +149,7 @@ h1, h2 {
   user-select: none;
   z-index: 2;
 }
+
 
 /* Password strength feedback */
 .password-strength {
