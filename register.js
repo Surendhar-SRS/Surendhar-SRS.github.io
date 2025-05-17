@@ -55,11 +55,11 @@ document.addEventListener('DOMContentLoaded', function () {
   passwordInput.addEventListener('input', checkPasswordMatch);
   confirmPassInput.addEventListener('input', checkPasswordMatch);
 
-  // Eye icon toggle
+  // Eye icon toggle (no emoji, just swap input type)
   togglePassword.addEventListener('click', function() {
     const type = passwordInput.getAttribute('type');
     passwordInput.setAttribute('type', type === 'password' ? 'text' : 'password');
-    this.textContent = type === 'password' ? "🙈" : "👁️";
+    // No emoji or text change; SVG remains unchanged
   });
 
   // Form validation
