@@ -4,6 +4,46 @@ document.addEventListener('DOMContentLoaded', function () {
   const confirmPassInput = document.getElementById('reg-confirmpass');
   const confirmPassMsg = document.getElementById('confirm-password-message');
   const form = document.getElementById('register-form');
+  const emailInput = document.getElementById('reg-email');
+
+  // Create or select the email error message div
+  let emailError = emailInput.nextElementSibling;
+  // If the next sibling is not a div, create one
+  if (!emailError || emailError.tagName.toLowerCase() !== 'div') {
+    emailError = document.createElement('div');
+    emailError.className = 'password-strength';
+    emailError.style.marginTop = '-0.7em';
+    emailError.style.marginBottom = '1em';
+    emailError.style.fontSize = '0.98em';
+    emailError.style.fontWeight = '600';
+    emailError.style.textAlign = 'left';
+    emailError.style.minHeight = '1.3em';
+    emailInput.parentNode.insertBefore(emailError, emailInput.nextSibling);
+  }
+
+  function validateEmail(email) {
+    // Basic, robust email regex
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+
+  function showEmailValidation() {
+    const email = emailInput.value;
+    if (!email) {
+      emailError.textContent = '';
+      emailError.className = 'password-strength';
+      return true;
+    }
+    if (!validateEmail(email)) {
+      emailError.textContent = 'Please enter a valid email address.';
+      emailError.className = 'password-strength weak';
+      return false;
+    } else {
+      emailError.textContent = '';
+      emailError.className = 'password-strength';
+      return true;
+    }
+  }
 
   function evaluatePasswordStrength(pw) {
     let strength = 0;
@@ -54,6 +94,9 @@ document.addEventListener('DOMContentLoaded', function () {
   passwordInput.addEventListener('input', checkPasswordMatch);
   confirmPassInput.addEventListener('input', checkPasswordMatch);
 
+  // Live email validation
+  emailInput.addEventListener('input', showEmailValidation);
+
   // Form validation
   form.addEventListener('submit', function(e) {
     updateStrength();
@@ -61,6 +104,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const pw = passwordInput.value;
     const cpw = confirmPassInput.value;
     const result = evaluatePasswordStrength(pw);
+
+    // Email validation
+    if (!showEmailValidation()) {
+      emailInput.focus();
+      e.preventDefault();
+      return false;
+    }
+
     if (result.class !== 'strong') {
       strengthDiv.textContent = "Password is not strong enough: " + result.label;
       strengthDiv.className = 'password-strength weak';
