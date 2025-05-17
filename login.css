@@ -125,39 +125,7 @@ h1, h2 {
   animation: fadeInUp 0.7s cubic-bezier(0.27, 0.8, 0.44, 0.98);
 }
 
-
-.password-field-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 2.7em; /* Match input height for best centering */
-}
-
-.password-field-wrapper input {
-  width: 100%;
-  padding-right: 2.5em !important;
-  box-sizing: border-box;
-  height: 2.7em; /* Make input and wrapper same height to help centering */
-}
-
-.eye-icon {
-  position: absolute;
-  right: 1em;
-  top: 50%;
-  transform: translateY(-50%);
-  cursor: pointer;
-  font-size: 1.3em;
-  color: #8b4513;
-  opacity: 0.75;
-  user-select: none;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  height: 1.5em;
-}
-
-
-/* Password strength feedback */
+/* --- Registeration page password strength styles --- */
 .password-strength {
   margin: -0.7em 0 1em 0;
   font-size: 0.98em;
@@ -171,3 +139,5 @@ h1, h2 {
 .password-strength.strong { color: #388e3c; }
 .password-strength.nomatch { color: #d32f2f; }
 .password-strength.match { color: #388e3c; }
+
+/* Removed .password-field-wrapper and .eye-icon styles as requested */
