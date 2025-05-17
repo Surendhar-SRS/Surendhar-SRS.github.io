@@ -39,7 +39,15 @@
       <label for="reg-confirmpass">Confirm Password</label>
       <input type="password" id="reg-confirmpass" name="confirmpassword" placeholder="Re-enter your password" required autocomplete="new-password">
       <div class="password-strength" id="confirm-password-message"></div>
-      <button type="submit">Register</button>
+
+      <div id="otp-section" style="display:none;">
+        <label for="reg-otp">Enter OTP sent to your email</label>
+        <input type="text" id="reg-otp" name="otp" placeholder="Enter OTP" maxlength="6">
+        <div class="password-strength" id="otp-message"></div>
+        <button type="button" id="resend-otp-btn" style="margin:10px 0 5px 0;">Resend OTP</button>
+      </div>
+
+      <button type="submit" id="register-btn">Register</button>
 
       <div class="form-footer">
         Already have an account? <a href="login.html">Login here</a>
@@ -48,5 +56,4 @@
   </div>
   <script src="register.js"></script>
 </body>
-
 </html>
