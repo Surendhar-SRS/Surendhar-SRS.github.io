@@ -9,14 +9,14 @@
   <meta property="og:title" content="Register - SRS TAMIZHAN NETWORK">
   <meta property="og:description" content="Create your account for getting access to our exclusive products & resources">
   <meta property="og:type" content="website">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8649/8649595.png">>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/8649/8649595.png">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
   <div class="center-container">
-    <form class="form-card" autocomplete="on">
+    <form class="form-card" id="register-form" autocomplete="on" novalidate>
       <h1 style="color:#8b4513">Register</h1>
       <p style="color:#8b4513; margin:-10px 0 1.5em 0; font-size:1.07em;">
         Join the SRS TAMIZHAN DEVELOPEMENTS for our exclusive products and resources!
@@ -33,10 +33,15 @@
       <input type="email" id="reg-email" name="email" placeholder="Enter your email" required>
 
       <label for="reg-password">Password</label>
-      <input type="password" id="reg-password" name="password" placeholder="Create a password" required>
+      <div class="password-field-wrapper">
+        <input type="password" id="reg-password" name="password" placeholder="Create a password" required autocomplete="new-password">
+        <span class="eye-icon" id="toggle-password" title="Show/Hide password">&#128065;</span>
+      </div>
+      <div class="password-strength" id="password-strength"></div>
 
       <label for="reg-confirmpass">Confirm Password</label>
-      <input type="password" id="reg-confirmpass" name="confirmpassword" placeholder="Re-enter your password" required>
+      <input type="password" id="reg-confirmpass" name="confirmpassword" placeholder="Re-enter your password" required autocomplete="new-password">
+      <div class="password-strength" id="confirm-password-message"></div>
 
       <button type="submit">Register</button>
 
@@ -45,6 +50,7 @@
       </div>
     </form>
   </div>
+  <script src="register.js"></script>
 </body>
 
 </html>
