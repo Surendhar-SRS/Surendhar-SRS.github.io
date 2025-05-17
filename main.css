@@ -146,18 +146,17 @@ header {
   border: 2px solid transparent;
 }
 
-.quick-access-link:hover,
-.quick-access-link:focus {
+.quick-access-link:active {
   background: #8b4513;
   color: #ffd480;
   border-color: #ffd480;
 }
 
-.quick-access-link.active {
-  background: #8b4513;
-  color: #ffd480;
+.quick-access-link:hover,
+.quick-access-link:focus {
+  background: #c8822e;
+  color: #fffbe6;
   border-color: #ffd480;
-  box-shadow: 0 4px 12px rgba(139,69,19,0.12);
 }
 
 /* Make smooth scrolling work in all browsers */
