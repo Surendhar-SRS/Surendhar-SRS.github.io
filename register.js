@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const confirmPassMsg = document.getElementById('confirm-password-message');
   const form = document.getElementById('register-form');
   const togglePassword = document.getElementById('toggle-password');
+  const eyeOpen = document.getElementById('eye-open');
+  const eyeClosed = document.getElementById('eye-closed');
 
   function evaluatePasswordStrength(pw) {
     let strength = 0;
@@ -55,11 +57,13 @@ document.addEventListener('DOMContentLoaded', function () {
   passwordInput.addEventListener('input', checkPasswordMatch);
   confirmPassInput.addEventListener('input', checkPasswordMatch);
 
-  // Eye icon toggle (no emoji, just swap input type)
+  // Eye icon toggle (SVG design switch)
   togglePassword.addEventListener('click', function() {
     const type = passwordInput.getAttribute('type');
-    passwordInput.setAttribute('type', type === 'password' ? 'text' : 'password');
-    // No emoji or text change; SVG remains unchanged
+    const show = type === 'password';
+    passwordInput.setAttribute('type', show ? 'text' : 'password');
+    eyeOpen.style.display = show ? 'none' : 'inline';
+    eyeClosed.style.display = show ? 'inline' : 'none';
   });
 
   // Form validation
