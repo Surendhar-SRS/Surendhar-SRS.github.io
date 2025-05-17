@@ -126,21 +126,21 @@ h1, h2 {
 }
 
 /* --- Registeration page password strength and eye icon styles --- */
-.password-strength {
-  margin: -0.7em 0 1em 0;
-  font-size: 0.98em;
-  font-weight: 600;
-  text-align: left;
-  color: #8b4513;
-  min-height: 1.3em;
-  letter-spacing: 0.02em;
+.password-field-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-.password-strength.weak { color: #d32f2f; }
-.password-strength.medium { color: #f9a825; }
-.password-strength.strong { color: #388e3c; }
+
+/* Give extra space for the icon */
+.password-field-wrapper input[type="password"] {
+  padding-right: 2.5em;
+}
+
+/* Eye icon inside input */
 .eye-icon {
   position: absolute;
-  right: 1.1em;
+  right: 1em;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
@@ -148,9 +148,20 @@ h1, h2 {
   color: #8b4513;
   opacity: 0.7;
   user-select: none;
+  z-index: 2;
 }
-.password-field-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
+
+/* Password strength feedback */
+.password-strength {
+  margin: -0.7em 0 1em 0;
+  font-size: 0.98em;
+  font-weight: 600;
+  text-align: left;
+  min-height: 1.3em;
+  letter-spacing: 0.02em;
 }
+.password-strength.weak { color: #d32f2f; }
+.password-strength.medium { color: #FFA500; }
+.password-strength.strong { color: #388e3c; }
+.password-strength.nomatch { color: #d32f2f; }
+.password-strength.match { color: #388e3c; }
