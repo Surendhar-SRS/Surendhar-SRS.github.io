@@ -1,5 +1,3 @@
-// Password strength check and validation for registration page
-
 document.addEventListener('DOMContentLoaded', function () {
   const passwordInput = document.getElementById('reg-password');
   const strengthDiv = document.getElementById('password-strength');
@@ -15,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (/[a-z]/.test(pw)) strength++;
     if (/[0-9]/.test(pw)) strength++;
     if (/[\W_]/.test(pw)) strength++;
-    // At least 8, 1 upper, 1 lower, 1 special
     if (pw.length < 8) return { label: "Weak (min 8 chars)", class: 'weak' };
     if (!/[A-Z]/.test(pw)) return { label: "Weak (need uppercase)", class: 'weak' };
     if (!/[a-z]/.test(pw)) return { label: "Weak (need lowercase)", class: 'weak' };
@@ -47,10 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (pw !== cpw) {
       confirmPassMsg.textContent = "Passwords do not match";
-      confirmPassMsg.className = "password-strength weak";
+      confirmPassMsg.className = "password-strength nomatch";
     } else {
       confirmPassMsg.textContent = "Passwords match";
-      confirmPassMsg.className = "password-strength strong";
+      confirmPassMsg.className = "password-strength match";
     }
   }
 
@@ -81,11 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if (pw !== cpw) {
       confirmPassMsg.textContent = "Passwords do not match";
-      confirmPassMsg.className = "password-strength weak";
+      confirmPassMsg.className = "password-strength nomatch";
       confirmPassInput.focus();
       e.preventDefault();
       return false;
     }
-    // Allow submit if all checks pass
   });
 });
