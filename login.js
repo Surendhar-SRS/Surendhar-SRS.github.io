@@ -1,33 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
+  const API_BASE = 'http://localhost:3001'; // CHANGE to your backend URL on deploy
   const form = document.getElementById('login-form');
-  const loginInput = document.getElementById('login-username');
-  const pwInput = document.getElementById('login-password');
-  const msgDiv = document.getElementById('login-message');
-
-  form.addEventListener('submit', function(e) {
+  form.addEventListener('submit', async function(e) {
     e.preventDefault();
-    msgDiv.textContent = '';
-    msgDiv.className = 'password-strength';
-
-    const input = loginInput.value.trim();
-    const pw = pwInput.value;
-    const users = JSON.parse(localStorage.getItem('users') || '[]');
-    const user = users.find(u =>
-      (u.username === input || u.email === input) && u.password === pw
-    );
-    if (user) {
-      msgDiv.textContent = 'Login successful! Welcome, ' + user.name;
-      msgDiv.className = 'password-strength match';
-      // Save session (optional)
-      localStorage.setItem('loggedInUser', JSON.stringify(user));
-      setTimeout(() => {
-        // Redirect or show dashboard as needed
-        alert('Login successful! Welcome, ' + user.name);
-        // window.location.href = 'dashboard.html';
-      }, 600);
+    const input = document.getElementById('login-username').value.trim();
+    const pw = document.getElementById('login-password').value;
+    const resp = await fetch(API_BASE + '/api/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ usernameOrEmail: input, password: pw })
+    });
+    const data = await resp.json();
+    if (data.success) {
+      localStorage.setItem('jwt', data.token);
+      localStorage.setItem('loggedInUser', JSON.stringify(data.user));
+      window.location.href = 'index.html';
     } else {
-      msgDiv.textContent = 'Invalid username/email or password.';
-      msgDiv.className = 'password-strength nomatch';
+      alert(data.msg);
     }
   });
 });
