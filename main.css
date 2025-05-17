@@ -109,7 +109,7 @@ header {
   transform: scale(1.08);
 }
 
-/* --- QUICK ACCESS NAVIGATION --- */
+/* --- QUICK ACCESS NAVIGATIONS --- */
 .quick-access-nav {
   display: flex;
   flex-wrap: wrap;
