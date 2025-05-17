@@ -35,7 +35,19 @@
       <label for="reg-password">Password</label>
       <div class="password-field-wrapper">
         <input type="password" id="reg-password" name="password" placeholder="Create a password" required autocomplete="new-password">
-        <span class="eye-icon" id="toggle-password" title="Show/Hide password">&#128065;</span>
+        <span class="eye-icon" id="toggle-password" title="Show/Hide password">
+          <!-- Eye Open SVG -->
+          <svg id="eye-open" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#8b4513" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;">
+            <ellipse cx="11" cy="11" rx="8" ry="4.5"/>
+            <circle cx="11" cy="11" r="2"/>
+          </svg>
+          <!-- Eye Closed SVG -->
+          <svg id="eye-closed" xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" stroke="#8b4513" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+            <ellipse cx="11" cy="11" rx="8" ry="4.5"/>
+            <circle cx="11" cy="11" r="2"/>
+            <line x1="4" y1="18" x2="18" y2="4" />
+          </svg>
+        </span>
       </div>
       <div class="password-strength" id="password-strength"></div>
 
